@@ -1,0 +1,25 @@
+@import "./base/reset";
+@import "./utils/variables";
+@import "./base/common";
+@import "./utils/hidden";
+
+//COMPONENTS
+//INDEX
+
+@import "./components/container";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/advantage";
+@import "./components/about";
+@import "./components/team";
+@import "./components/social";
+@import "./components/clients";
+@import "./components/footer";
+
+//PORTFOLIO
+
+@import "./components/portfolio";
+
+//MODAL
+
+@import "./components/modal";
