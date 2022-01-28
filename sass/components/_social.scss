@@ -1,21 +1,17 @@
-.social-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.social__list {
+  @include flex-center();
 }
-.social-link {
+.social__link {
   width: 44px;
   height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center();
   border-radius: 50%;
   color: #afb1b8;
   transition: color var(--transition), background-color var(--transition);
 }
-.social-item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
-.social-icon {
+.social__icon {
   fill: currentColor;
 }

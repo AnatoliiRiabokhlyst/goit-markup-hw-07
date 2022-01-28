@@ -1,5 +1,6 @@
 @import "./base/reset";
 @import "./utils/variables";
+@import "./utils/mixin";
 @import "./base/common";
 @import "./utils/hidden";
 
@@ -9,12 +10,14 @@
 @import "./components/container";
 @import "./components/header";
 @import "./components/hero";
+@import "./base/section";
 @import "./components/advantage";
+@import "./base/section-title";
 @import "./components/about";
 @import "./components/team";
-@import "./components/social";
 @import "./components/clients";
 @import "./components/footer";
+@import "./components/social";
 
 //PORTFOLIO
 
