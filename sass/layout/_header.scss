@@ -4,20 +4,12 @@
 .header__container {
   @include flex-center(flex, null, center);
 }
-.logo {
-  font-family: "Raleway";
-  @include font(26px, 700, 31px, null);
-  color: var(--accent-color);
-}
 .nav {
   display: flex;
 }
 .nav__logo {
   @include flex-center(flex, null, center);
   margin-right: 93px;
-}
-.nav__logo-studio {
-  color: var(--link-color);
 }
 .nav__list {
   color: var(--link-color);

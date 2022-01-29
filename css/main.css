@@ -19,6 +19,12 @@ button {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+}
+
+input {
+  padding: 0;
 }
 
 :root {
@@ -73,13 +79,24 @@ body {
   margin: 0 auto;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
+.main-btn {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--btn-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 0;
+  transition: backgroun-color var(--transition);
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
+.main-btn:hover, .main-btn:focus {
+  background-color: #188ce8;
+  outline: none;
 }
 
 .logo {
@@ -90,6 +107,23 @@ body {
   color: var(--accent-color);
 }
 
+.logo--black {
+  color: var(--link-color);
+}
+
+.logo--white {
+  color: var(--second-title-color);
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
 .nav {
   display: flex;
 }
@@ -98,10 +132,6 @@ body {
   display: flex;
   align-items: center;
   margin-right: 93px;
-}
-
-.nav__logo-studio {
-  color: var(--link-color);
 }
 
 .nav__list {
@@ -192,29 +222,17 @@ body {
   max-width: 670px;
 }
 
-.hero__btn {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: var(--btn-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 10px 32px;
-  border: 0;
-  transition: backgroun-color var(--transition);
-}
-
-.hero__btn:hover, .hero__btn:focus {
-  background-color: #188ce8;
-  outline: none;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--first-title-color);
+  margin-bottom: 50px;
 }
 
 .advantage {
@@ -253,14 +271,6 @@ body {
   min-height: 120px;
   background-color: var(--background-color-advatage);
   margin-bottom: 30px;
-}
-
-.section-title {
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  color: var(--first-title-color);
-  margin-bottom: 50px;
 }
 
 .about__list {
@@ -376,10 +386,6 @@ body {
 
 .address__item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer__logo {
-  color: var(--second-title-color);
 }
 
 .address__link {
@@ -732,10 +738,6 @@ body {
   line-height: 1.16667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-input {
-  padding: 0;
 }
 
 .checkbox-container {
